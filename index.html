@@ -226,7 +226,7 @@ footer{background:var(--dark);border-top:1px solid rgba(231,180,95,.25);padding-
   <div class="wrap">
     <div class="section-head">
       <span class="eyebrow">La collezione</span>
-      <h2>Le nostre creazioni</h2>
+      <h2>Le mie creazioni</h2>
       <p>42 collane e 43 bracciali, tutti pezzi unici. Scegli, aggiungi al carrello e ordina in pochi passi.</p>
     </div>
     <div class="filters" id="filters">
@@ -261,7 +261,7 @@ footer{background:var(--dark);border-top:1px solid rgba(231,180,95,.25);padding-
     <div class="section-head">
       <span class="eyebrow">Su misura</span>
       <h2>Crea la tua collana</h2>
-      <p>Scegli ogni dettaglio: Cristina la realizzerà a mano per te. Il prezzo te lo confermiamo su WhatsApp in base alle tue scelte.</p>
+      <p>Scegli ogni dettaglio: Cristina la realizzerà a mano per te. Il prezzo te lo confermo su WhatsApp in base alle tue scelte.</p>
     </div>
     <div class="creator">
       <div class="creator-form" id="creatorForm"><!-- generato via JS --></div>
@@ -272,7 +272,7 @@ footer{background:var(--dark);border-top:1px solid rgba(231,180,95,.25);padding-
           <textarea id="creaNote" rows="2" placeholder="Es. la voglio come la foto X, o un'idea tua…"></textarea>
         </label>
         <button class="co-btn co-wa" onclick="ordinaCrea()">Ordina la mia collana su WhatsApp</button>
-        <div class="co-note">Riceviamo le tue scelte e ti confermiamo prezzo e tempi.</div>
+        <div class="co-note">Ricevo le tue scelte e ti confermo prezzo e tempi.</div>
       </aside>
     </div>
   </div>
@@ -299,7 +299,7 @@ footer{background:var(--dark);border-top:1px solid rgba(231,180,95,.25);padding-
     <div class="section-head">
       <span class="eyebrow">Parliamone</span>
       <h2>Ordina o chiedi un pezzo su misura</h2>
-      <p>Scrivici su WhatsApp o sui social: rispondiamo volentieri.</p>
+      <p>Scrivimi su WhatsApp o sui social: rispondo volentieri.</p>
     </div>
     <div class="ways">
       <div class="way"><div class="lbl">Telefono / WhatsApp</div><div class="val" id="waNum">+39 379 180 7564</div><button class="copybtn" onclick="copyVal('waNum',this)">Copia</button></div>
@@ -401,7 +401,7 @@ function renderCart(){
         <div class="qty"><button onclick="changeQty('${id}',-1)">−</button><span>${q}</span><button onclick="changeQty('${id}',1)">+</button></div></div>`;
     }).join('');
     const g=omaggi();
-    if(g>0)html+=`<div class="gift-line">🎁<div><b>${g} bracciale${g>1?'i':''} in omaggio</b><br><small>hai ${countCollane()} collane — ne aggiungiamo noi il regalo</small></div></div>`;
+    if(g>0)html+=`<div class="gift-line">🎁<div><b>${g} bracciale${g>1?'i':''} in omaggio</b><br><small>hai ${countCollane()} collane — il bracciale è un mio regalo</small></div></div>`;
     box.innerHTML=html;
   }
   const sub=PRODUCTS.reduce((a,p)=>a+(state.cart[p.id]||0)*p.prezzo,0);
