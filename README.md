@@ -17,9 +17,9 @@ competenze tecniche.
 
 ## Caratteristiche
 
-- **Catalogo dinamico** con 35 collane e 43 bracciali, filtrabili per categoria
-- **Scheda prodotto a comparsa** (lightbox) con foto ingrandita, descrizione,
-  lavorazione, lunghezza e significato delle pietre
+- **Catalogo dinamico** con 37 collane e 43 bracciali, filtrabili per categoria
+- **Scheda prodotto a comparsa** (lightbox) con foto ingrandita, descrizione
+  e scheda tecnica (lunghezza, punto, materiali, filo; pietre per i bracciali)
 - **Carrello** con calcolo automatico del totale e della spedizione fissa
 - **Promo automatica**: ogni 3 collane, 1 bracciale in omaggio (calcolato dal carrello)
 - **Configuratore "Crea la tua collana"**: il cliente compone il gioiello
@@ -46,15 +46,13 @@ img/                    → tutte le immagini
   braccialetti/         → foto dei bracciali
   mamma.jpg, ...        → foto dell'artigiana e delle lavorazioni
   locandina1.jpg, ...   → locandine dei mercatini
-CATALOGO.txt            → elenco leggibile di tutti i prodotti
-LEGGIMI.txt             → istruzioni per aggiornare il sito
 ```
 
 ## Come aggiornare
 
 Nessun codice da toccare per le modifiche comuni: basta **sostituire un file
-immagine** con uno dallo stesso nome. Per nomi, prezzi e descrizioni c'è una
-tabella commentata in `index.html`. Istruzioni complete in `LEGGIMI.txt`.
+immagine** con uno dallo stesso nome. Nomi, prezzi e descrizioni sono in una
+struttura dati commentata in `index.html` (`const PRODUCTS`).
 
 ---
 
